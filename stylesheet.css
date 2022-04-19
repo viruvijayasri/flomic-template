@@ -582,20 +582,19 @@ footer div {
         max-width:500px;
         padding: 0;
     }
-    .leftcolumn {
-        width:100%;
-        height:20%;
-        position:static;
-    }
+  
   
     .rightcolumn {
         width:100%;
         margin:0;
+        position:relative;
+        z-index:0;
     }
     
     .backgroundimg {
         height:60vh;
        }
+
    .input {
        padding-bottom: 5px;
    }
@@ -677,6 +676,14 @@ footer div {
     footer, .footer {
         border-left: 4px solid white;
     }
+    .leftcolumn {
+        width:100%;
+        height:20%;
+        position:sticky;
+        top:0;
+        z-index: 1;
+    }
+  
 
 }
 
